@@ -21,7 +21,6 @@ dependencies {
     compileOnly(libs.spigot)
 
     compileOnly(libs.bundles.economies)
-    compileOnly(fileTree("libs"))
 }
 
 publishing {

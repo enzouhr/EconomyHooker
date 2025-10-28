@@ -6,7 +6,6 @@ import me.itzflint.economyhooker.SingleEconomy;
 import me.itzflint.economyhooker.exception.MultiCurrencyException;
 import me.itzflint.economyhooker.provider.EconomyProvider;
 import me.itzflint.economyhooker.provider.MultiEconomyProvider;
-import me.itzflint.economyhooker.provider.impl.*;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -15,20 +14,6 @@ import java.util.*;
 public final class EconomyManager {
 
     private final List<EconomyProvider> providers = new ArrayList<>();
-
-    public EconomyManager() {
-        List<EconomyProvider> DEFAULT_PROVIDERS = Arrays.asList(
-                new VaultProvider(),
-                new MiyukiEconomyProvider(),
-                new yEconomiesProvider(),
-                new yPointsProvider(),
-                new NextCashProvider(),
-                new PlayerPointsProvider()
-        );
-        DEFAULT_PROVIDERS.stream()
-                .filter(EconomyProvider::isEnabled)
-                .forEach(this::registerProvider);
-    }
 
     public @NotNull List<EconomyProvider> getRegisteredEconomies() {
         return Collections.unmodifiableList(providers);
