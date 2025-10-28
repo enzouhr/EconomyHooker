@@ -24,7 +24,7 @@
     <dependency>
         <groupId>com.github.enzouhr</groupId>
         <artifactId>EconomyHooker</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
 </dependencies>
 ```
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.enzouhr:EconomyHooker:1.0.0'
+    implementation 'com.github.enzouhr:EconomyHooker:1.0.1'
 }
 
 shadowJar {
