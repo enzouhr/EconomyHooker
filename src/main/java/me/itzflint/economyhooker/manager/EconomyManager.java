@@ -6,14 +6,24 @@ import me.itzflint.economyhooker.SingleEconomy;
 import me.itzflint.economyhooker.exception.MultiCurrencyException;
 import me.itzflint.economyhooker.provider.EconomyProvider;
 import me.itzflint.economyhooker.provider.MultiEconomyProvider;
+import me.itzflint.economyhooker.provider.base.PlayerPointsProvider;
+import me.itzflint.economyhooker.provider.base.VaultProvider;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public final class EconomyManager {
 
     private final List<EconomyProvider> providers = new ArrayList<>();
+
+    public EconomyManager() {
+        Stream.of(
+                new VaultProvider(),
+                new PlayerPointsProvider()
+        ).forEach(this::registerProvider);
+    }
 
     public @NotNull List<EconomyProvider> getRegisteredEconomies() {
         return Collections.unmodifiableList(providers);
