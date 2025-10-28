@@ -1,0 +1,24 @@
+[versions]
+# Java Libs
+lombok = "1.18.42"
+annotations = "26.0.2"
+
+# Minecraft Libs
+spigot = "1.16.5-R0.1-SNAPSHOT"
+
+vault = "1.7.1"
+player-points = "3.3.3"
+
+[libraries]
+# Java Libs
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+annotations = { module = "org.jetbrains:annotations", version.ref = "annotations" }
+
+# Minecraft Libs
+spigot = { module = "org.spigotmc:spigot-api", version.ref = "spigot" }
+
+vault = { module = "com.github.MilkBowl:VaultAPI", version.ref = "vault" }
+player-points = { module = "org.black_ixx:playerpoints", version.ref = "player-points" }
+
+[bundles]
+economies = [ "vault", "player-points" ]
