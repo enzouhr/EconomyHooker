@@ -8,6 +8,7 @@
 ## Features
 
 * Suporte a plugins multi-economias (ex: yEconomias e MiyukiEconomy)
+* Suporte nativo ao Vault e PlayerPoints
 
 ## Instalação
 
@@ -24,7 +25,7 @@
     <dependency>
         <groupId>com.github.enzouhr</groupId>
         <artifactId>EconomyHooker</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
     </dependency>
 </dependencies>
 ```
@@ -41,7 +42,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.enzouhr:EconomyHooker:1.0.1'
+    implementation 'com.github.enzouhr:EconomyHooker:1.1.0'
 }
 
 shadowJar {
