@@ -8,7 +8,6 @@
 ## Features
 
 * Suporte a plugins multi-economias (ex: yEconomias e MiyukiEconomy)
-* Suporte nativo a 6 plugins de Economia (Vault, PlayerPoints, NextCash, yPoints, yEconomias e MiyukiEconomy)
 
 ## Instalação
 
