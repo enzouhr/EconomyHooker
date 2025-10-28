@@ -1,14 +1,13 @@
 # EconomyHooker
 
 [![](https://jitpack.io/v/enzouhr/EconomyHooker.svg)](https://jitpack.io/#enzouhr/EconomyHooker)
-[![](https://img.shields.io/discord/390919659874156560.svg?colorB=5865f2&label=Discord&logo=discord&logoColor=white)](https://discord.gg/PH94WbJ6ug)
+[![](https://img.shields.io/discord/1186878333045186600.svg?colorB=5865f2&label=Discord&logo=discord&logoColor=white)](https://discord.gg/PH94WbJ6ug)
 
 **EconomyHooker** é uma biblioteca que facilita a integração com múltiplos plugins de economia
 
 ## Features
 
 * Suporte a plugins multi-economias (ex: yEconomias e MiyukiEconomy)
-* Suporte nativo a 6 plugins de Economia (Vault, PlayerPoints, NextCash, yPoints, yEconomias e MiyukiEconomy)
 
 ## Instalação
 
@@ -25,7 +24,7 @@
     <dependency>
         <groupId>com.github.enzouhr</groupId>
         <artifactId>EconomyHooker</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
 </dependencies>
 ```
@@ -42,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.enzouhr:EconomyHooker:1.0.0'
+    implementation 'com.github.enzouhr:EconomyHooker:1.0.1'
 }
 
 shadowJar {
